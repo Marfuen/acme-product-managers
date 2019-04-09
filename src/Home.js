@@ -1,8 +1,8 @@
 import React from "react";
 
-const Home = () => {
+const Home = ({managersCount}) => {
   return(
-    <p>We have openings for Product Managers!</p>
+    <p>We {managersCount > 0 ? 'HAVE' : 'DON\'T HAVE'} openings for Product Managers!</p>
   )
 }
 

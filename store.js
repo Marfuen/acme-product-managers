@@ -5,6 +5,7 @@ import axios from 'axios';
 const initialState = {
   users: [],
   products: [],
+  managerCount: 0,
 }
 
 const GOT_USERS = 'GOT_USERS';
