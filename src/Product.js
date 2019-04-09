@@ -46,9 +46,9 @@ class Product extends Component {
               <label>
                 <em>Product Manager</em>
               </label>
-              <select className="form-control" name="managerId" onChange={this.onChange}>
+              <select className="form-control" name="managerId" onChange={this.onChange} value={this.state.value}>
                 <option value={null}>-- none --</option>
-                {users.map(user => <option key={user.id} value={this.state.value}>{user.name}</option>)}
+                {users.map(user => <option key={user.id} value={user.id}>{user.name}</option>)}
               </select>
             </div>
             <button type="submit" className="btn btn-primary">Save</button>
