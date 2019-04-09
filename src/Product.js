@@ -28,6 +28,13 @@ class Product extends Component {
     this.props.updateManagerId(productId, 1*this.state.value)
               .catch(e => console.log(e));
   }
+  componentDidUpdate(prevState){
+    if(this.props.product.managerId && prevState.product.managerId !== this.props.product.managerId){
+      this.setState({
+        value: this.props.product.managerId
+      })
+    }
+  }
   render(){
     const { product, users } = this.props;
     return(
