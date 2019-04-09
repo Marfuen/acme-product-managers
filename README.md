@@ -1,3 +1,2 @@
-# react-minimal template
-- npm install
-- npm run start:dev
+# Heroku Link:
+https://marianfu-acme-product-managers.herokuapp.com/#/
